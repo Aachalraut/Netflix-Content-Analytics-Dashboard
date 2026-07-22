@@ -127,13 +127,15 @@ Netflix-Content-Analytics-Dashboard
 
 ### Dashboard Overview
 
-*(Insert Screenshot Here)*
+<img width="1238" height="746" alt="Screenshot 2026-07-22 140329" src="https://github.com/user-attachments/assets/635002eb-85bc-475a-bad0-b1462147d385" />
+
 
 ---
 
 ### Netflix Content Explorer
 
-*(Insert Screenshot Here)*
+<img width="326" height="398" alt="Screenshot 2026-07-22 141119" src="https://github.com/user-attachments/assets/101ce87e-53aa-48c8-824f-714d70a8082d" />
+
 
 ---
 
