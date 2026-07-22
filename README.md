@@ -1,112 +1,154 @@
 # 🎬 Netflix Content Analytics Dashboard
 
-## 📌 Project Overview
-
-This project presents an interactive **Netflix Content Analytics Dashboard** built using **Power BI**. The dashboard provides insights into Netflix's content library, including movies and TV shows, by analyzing trends in content additions, ratings, genres, countries, and release years.
-
-The project demonstrates the complete data analytics workflow, including **data cleaning, transformation, data modeling, DAX calculations, and dashboard development**.
+An interactive **Power BI dashboard** built to analyze the **Netflix Movies & TV Shows** dataset. This project demonstrates the complete data analytics workflow, including **data cleaning, normalization, relational data modeling, DAX calculations, and interactive dashboard development**.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🚀 Tech Stack
 
-- Power BI
-- Microsoft Excel
-- Power Query
-- DAX
-- Data Modeling
-- Data Visualization
+| Category | Technologies |
+|----------|--------------|
+| Dashboard & BI | Power BI |
+| Data Cleaning & Transformation | Microsoft Excel, Power Query |
+| Data Modeling | Relational Data Model |
+| Analytics | DAX |
+| Version Control | Git, GitHub |
 
 ---
 
 ## 📂 Dataset
 
-- **Source:** Netflix Movies & TV Shows Dataset (Kaggle)
+- **Dataset:** Netflix Movies & TV Shows
+- **Source:** Kaggle
 - **Format:** CSV
-- **Records:** ~8,800+ Titles
+- **Records:** 8,800+ Netflix Titles
 
-The original dataset is included in this repository.
-
----
-
-## 🧹 Data Preparation & Cleaning
-
-The original Netflix dataset was provided as a **single CSV file** containing multiple comma-separated values for attributes such as **cast, directors, genres, and countries**.
-
-To improve data quality and create a scalable data model, the dataset was cleaned and transformed in **Microsoft Excel** by:
-
-- Removing blank values and handling missing data
-- Trimming unnecessary spaces
-- Standardizing text values
-- Splitting multi-value columns into separate normalized tables
-- Preparing the data for relational modeling in Power BI
+The original dataset (`netflix_titles.csv`) is included in this repository.
 
 ---
 
-## 🗂️ Data Modeling
+# 📋 Project Objective
 
-Instead of using a single flat table, the dataset was normalized into multiple tables in Excel.
+The objective of this project is to analyze Netflix's content library and build an interactive dashboard that helps users understand:
+
+- Movies vs TV Shows distribution
+- Content growth over time
+- Rating distribution
+- Genre popularity
+- Country-wise content availability
+- Detailed information about each Netflix title
+
+---
+
+# 🧹 Data Cleaning & Transformation
+
+The original dataset consisted of a single CSV file containing multiple comma-separated values in columns such as:
+
+- Cast
+- Director
+- Country
+- Genre (Listed In)
+
+To prepare the data for analysis, Microsoft Excel was used to:
+
+- Remove blank and missing values
+- Trim unnecessary spaces
+- Standardize text values
+- Clean inconsistent records
+- Split multi-value columns into separate normalized tables
+
+This process improved data quality and enabled efficient relational modeling in Power BI.
+
+---
+
+# 🗂️ Data Modeling
+
+Instead of importing one large flat table into Power BI, the dataset was normalized into multiple tables.
 
 The following tables were created:
 
 | Table | Description |
 |--------|-------------|
-| **netflix_data_titles** | Main table containing Netflix title information |
+| **netflix_data_titles** | Main table containing title information |
 | **netflix_data_netflix_cast** | Cast members for each title |
 | **netflix_data_netflix_directors** | Directors of each title |
-| **netflix_data_netflix_listed_in** | Genres/Categories |
+| **netflix_data_netflix_listed_in** | Genres / Categories |
 | **netflix_data_countries_released** | Countries where content is available |
 | **netflix_data_description** | Description of each title |
 
-All tables are connected using the **show_id** column, creating a relational data model inside Power BI that improves filtering, report performance, and dashboard scalability.
+All tables are connected using the **show_id** column, creating a relational data model that enables efficient filtering, improved performance, and accurate cross-table analysis.
 
-> **Note:** The repository includes the original Netflix CSV dataset. The normalized tables were created from this dataset using Microsoft Excel before importing the data into Power BI.
+> **Note:** The original CSV dataset is included in this repository. The normalized tables were created from this dataset using Microsoft Excel before importing the data into Power BI.
 
 ---
 
-## 📊 Dashboard Features
+# 📊 Dashboard Features
 
-### Dashboard 1 – Netflix Content Analytics
+## Dashboard 1 — Netflix Content Analytics
 
-- Total Movies & TV Shows KPIs
-- Movies vs TV Shows Analysis
+The overview dashboard provides high-level insights into Netflix's content library.
+
+### Features
+
+- KPI Cards
+  - Total Titles
+  - Movies
+  - TV Shows
 - Shows Added by Year
 - Rating Distribution
-- Top Genres
+- Top 10 Genres
 - Country-wise Content Availability
 - Interactive Filters & Slicers
+- Responsive Visualizations
 
 ---
 
-### Dashboard 2 – Netflix Content Explorer
+## Dashboard 2 — Netflix Content Explorer
 
-An interactive page to explore individual Netflix titles.
+A dynamic dashboard for exploring individual Netflix titles.
 
-Features include:
+### Features
 
-- Title Selection
+- Movie/TV Show Selector
+- Title Description
 - Release Year
-- Rating
-- Description
-- Genre
-- Director
+- Content Rating
+- Director Information
 - Cast Members
+- Genres
 - Country Availability
 - Interactive Map
 
 ---
 
-## 📈 Key Insights
+# 📈 Key Insights
 
-- Movies make up the majority of Netflix's content library.
+- Movies represent the majority of Netflix's content library.
 - TV-MA is one of the most common content ratings.
 - The United States contributes the highest number of Netflix titles.
-- Netflix experienced significant content growth after 2015.
 - Drama and International Movies are among the most popular genres.
+- Netflix experienced significant content growth after 2015.
 
 ---
 
-## 📁 Repository Structure
+# 💡 Power BI Concepts Used
+
+- Data Modeling
+- Relationships
+- DAX Measures
+- Power Query
+- KPI Cards
+- Line Charts
+- Clustered Bar Charts
+- Column Charts
+- Filled Map
+- Slicers
+- Drill-through Navigation
+- Interactive Filtering
+
+---
+
+# 📁 Repository Structure
 
 ```
 Netflix-Content-Analytics-Dashboard
@@ -114,62 +156,70 @@ Netflix-Content-Analytics-Dashboard
 ├── README.md
 ├── Netflix Dashboard.pbix
 ├── netflix_titles.csv
+│
 ├── Screenshots
 │   ├── Dashboard Overview.png
-│   └── Content Explorer.png
-└── Assets
-    └── Netflix Logo.png
+│   ├── Netflix Content Explorer.png
+│   └── Data Model.png
+│
+├── Assets
+│   └── Netflix Logo.png
+│
+└── LICENSE
 ```
 
 ---
 
-## 📷 Dashboard Preview
+# 📸 Dashboard Preview
 
-### Dashboard Overview
+## Dashboard Overview
 
-<img width="1245" height="745" alt="Screenshot 2026-07-22 140117" src="https://github.com/user-attachments/assets/08df3471-5561-482e-b2a6-30b308f8e7d8" />
-
-
+*(Add Screenshot Here)*
 
 ---
 
-### Netflix Content Explorer
+## Netflix Content Explorer
 
-<img width="1238" height="746" alt="Screenshot 2026-07-22 140329" src="https://github.com/user-attachments/assets/e42b9035-45db-4c87-b995-25cc3472716a" />
-
-
+*(Add Screenshot Here)*
 
 ---
 
-## 💡 Skills Demonstrated
+## Data Model
+
+*(Add Screenshot of Power BI Model View Here)*
+
+---
+
+# 🎯 Skills Demonstrated
 
 - Data Cleaning
 - Data Transformation
 - Data Normalization
-- Data Modeling
-- Relational Database Design
-- Power Query
-- DAX
+- Relational Data Modeling
 - Power BI Dashboard Development
+- DAX
+- Power Query
 - KPI Reporting
-- Interactive Data Visualization
+- Data Visualization
+- Business Intelligence Reporting
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Future Enhancements
 
-- Add bookmarks for dashboard navigation
-- Include additional DAX measures
 - Publish dashboard to Power BI Service
 - Add advanced drill-through pages
-- Automate data refresh using Power BI Service
+- Automate scheduled data refresh
+- Expand dashboard with additional KPIs
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Aachal Raut**
 
-LinkedIn: https://www.linkedin.com/in/aachal-raut-777111288/
+📧 Email: aachalraut2010@gmail.com
 
-GitHub: https://github.com/Aachalraut
+💼 LinkedIn: https://www.linkedin.com/in/aachal-raut-777111288/
+
+🐙 GitHub: https://github.com/Aachalraut
