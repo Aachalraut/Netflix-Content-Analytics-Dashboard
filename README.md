@@ -170,6 +170,6 @@ Netflix-Content-Analytics-Dashboard
 
 **Aachal Raut**
 
-LinkedIn: https://www.linkedin.com/in/aachal-raut
+LinkedIn: https://www.linkedin.com/in/aachal-raut-777111288/
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/Aachalraut
